@@ -13,11 +13,6 @@ terraform {
       version = "2.13.2"
     }
   }
-  backend "s3" {
-    bucket = "comunidadedevops-richard"
-    key    = "dev/terraform.tfstate"
-    region = var.region
-  }
 }
 
 provider "aws" {
